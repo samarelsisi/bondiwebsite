@@ -1,0 +1,249 @@
+:root {
+    --darkcolor: #3b3b38;
+    --maincolor: #09aba6;
+    --section-color: #eff7fa;
+    --yellow-color: #ffc400;
+}
+
+body {
+    font-family: 'Smooch Sans', sans-serif;
+}
+
+
+/* start navbar */
+
+.navbar {
+    background-color: var(--darkcolor);
+}
+
+.navbar .navbar-nav .nav-link {
+    color: #fff;
+}
+
+.navbar .navbar-nav .nav-link:hover,
+.navbar .navbar-nav .nav-link:focus,
+.navbar .navbar-nav .nav-link:active {
+    color: var(--maincolor);
+}
+
+.navbar .search {
+    color: var(--maincolor);
+}
+
+.navbar .navbar-toggler {
+    color: azure;
+}
+
+.navbar .navbar-toggler:focus {
+    box-shadow: none;
+}
+
+
+/* end navbar */
+
+
+/*start landing*/
+
+.landing {
+    background-color: var(--darkcolor);
+    min-height: calc(100vh - 72px) !important
+}
+
+.landing h1 {
+    font-family: 'Orbitron', sans-serif;
+}
+
+
+/*end landing*/
+
+
+/* start feature */
+
+.feature h2 {
+    font-family: 'Orbitron', sans-serif;
+}
+
+.main-title::after {
+    content: '';
+    width: 120px;
+    height: 1px;
+    background-color: var(--maincolor);
+    position: absolute;
+    bottom: -15px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.feature .icon-holder {
+    height: 200px;
+    /* left: 50%;
+    transform: translateX(-50%); */
+}
+
+.feature .icon-holder i {
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.number {
+    font-size: 12rem;
+    color: var(--section-color);
+}
+
+.icon {
+    color: var(--maincolor);
+}
+
+.feature .feat {
+    color: var(--yellow-color);
+}
+
+
+/* end feature */
+
+
+/* start our work */
+
+.ourwork {
+    background-color: var(--section-color);
+}
+
+.ourwork h2 {
+    font-family: 'Orbitron', sans-serif;
+}
+
+.ourwork ul .active {
+    background-color: #db2b45;
+    color: var(--yellow-color);
+}
+
+.ourwork ul li {
+    padding: .5rem 1rem;
+    cursor: pointer;
+}
+
+.ourwork ul li:not(.active):hover {
+    color: #ff3150;
+}
+
+.ourwork .box {
+    padding: 5px;
+    position: relative;
+    overflow: hidden;
+}
+
+.ourwork .box::before {
+    content: attr(data-work);
+    position: absolute;
+    background-color: rgba(9, 171, 163, 0.9);
+    width: calc(100% - 10px);
+    height: calc(100% - 10px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #eff7fa;
+    font-weight: bold;
+    font-family: tahoma;
+    font-size: 23px;
+    transition: .3s;
+    transform: translateX(calc(-100% - 10px));
+    border-radius: 3px;
+}
+
+.ourwork .box:hover::before {
+    transform: translateX(0);
+}
+
+
+/* end our work */
+
+
+/* start stuff */
+
+.stuff h2 {
+    font-family: 'Orbitron', sans-serif;
+}
+
+
+/* end stuff*/
+
+
+/* start ourteam */
+
+.ourteam {
+    background-color: var(--section-color);
+}
+
+.ourteam h3 {
+    color: var(--yellow-color);
+    font-family: 'Orbitron', sans-serif;
+    font-weight: 900;
+}
+
+.ourteam .box h4 {
+    background-color: var(--maincolor);
+}
+
+
+/* endourteam */
+
+
+/* start project */
+
+.project {
+    background-color: var(--darkcolor);
+}
+
+.project h2 {
+    font-family: 'Orbitron', sans-serif;
+}
+
+.project p {
+    color: var(--maincolor);
+}
+
+
+/* start project */
+
+
+/* start blog */
+
+.blog h2 {
+    font-family: 'Orbitron', sans-serif;
+}
+
+
+/* end blog */
+
+
+/* start subscripe */
+
+.subscribe {
+    background-color: var(--yellow-color);
+}
+
+.subscribe input[type="text"] {
+    border: none;
+    border-bottom: 1px solid white;
+}
+
+.subscribe input[type="text"]:focus {
+    outline: none
+}
+
+.subscribe input[type="text"]::placeholder {
+    color: white;
+}
+
+
+/* end subscripe */
+
+
+/* start footer */
+
+.footer {
+    background-color: var(--darkcolor);
+}
+
+
+/* end footer */
